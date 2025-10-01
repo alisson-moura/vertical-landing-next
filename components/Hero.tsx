@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 import {
   Wifi,
   Settings,
@@ -13,7 +13,7 @@ import {
   CreditCard,
   ArrowRight,
   Sparkles,
-} from "lucide-react";
+} from "lucide-react"
 
 const serviceCards = [
   {
@@ -52,53 +52,49 @@ const serviceCards = [
     description: "Servidores seguros e rápidos",
     gradient: "from-indigo-500 to-blue-600",
   },
-];
+]
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-50 overflow-hidden">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%239CA3AF%22%20fill-opacity%3D%220.03%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+    <section className="relative min-h-[90vh] bg-gradient-to-br from-black via-slate-950 to-black overflow-hidden">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%232f80c3%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
 
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-indigo-200/15 rounded-full blur-3xl"></div>
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#2f80c3]/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-[#2f80c3]/5 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 py-16 md:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
           {/* Left Content */}
           <div className="space-y-8 max-w-xl mt-4">
             <div className="space-y-6">
-              <Badge className="bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-200 text-sm px-4 py-1.5">
+              <Badge className="bg-[#2f80c3]/20 text-[#2f80c3] border-[#2f80c3]/30 hover:bg-[#2f80c3]/30 text-sm px-4 py-1.5">
                 <Sparkles className="w-3.5 h-3.5 mr-1.5 inline" />
                 Soluções Integradas para seu Negócio
               </Badge>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.1] tracking-tight text-balance">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight text-balance">
                 Tecnologia que{" "}
-                <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2f80c3] via-[#4a9ad6] to-[#2f80c3] bg-clip-text text-transparent">
                   impulsiona
                 </span>{" "}
                 resultados
               </h1>
 
-              <p className="text-lg md:text-xl text-slate-600 leading-relaxed text-pretty">
-                Oferecemos um ecossistema completo de tecnologia, desde
-                infraestrutura até automação de vendas.
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-pretty">
+                Oferecemos um ecossistema completo de tecnologia, desde infraestrutura até automação de vendas.
               </p>
             </div>
 
             <div className="space-y-4">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] group"
+                className="bg-gradient-to-r from-[#2f80c3] to-[#4a9ad6] hover:from-[#2570a8] hover:to-[#2f80c3] text-white px-8 py-6 text-lg shadow-lg hover:shadow-[#2f80c3]/50 transition-all duration-300 hover:scale-[1.02] group"
               >
                 Conhecer Soluções
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
 
-              <p className="text-sm text-slate-500">
-                Atendimento personalizado • Sem compromisso • Suporte local
-              </p>
+              <p className="text-sm text-gray-400">Atendimento personalizado • Sem compromisso • Suporte local</p>
             </div>
           </div>
 
@@ -107,7 +103,7 @@ export default function Hero() {
             <div className="hidden lg:grid grid-cols-[2fr_1fr] grid-rows-[repeat(4,minmax(120px,1fr))] gap-4 max-w-3xl">
               {/* VerticalPay Card - Spans 3 rows */}
               <div className="row-span-3 animate-fade-in-up">
-                <Card className="h-full bg-gradient-to-br from-blue-600 via-indigo-600 to-blue-700 text-white shadow-2xl border-0 transform hover:scale-[1.02] transition-all duration-500 hover:shadow-blue-500/30">
+                <Card className="h-full bg-gradient-to-br from-[#2f80c3] via-[#3a8bc9] to-[#2570a8] text-white shadow-2xl border-0 transform hover:scale-[1.02] transition-all duration-500 hover:shadow-[#2f80c3]/50">
                   <CardContent className="p-8 h-full flex flex-col justify-between">
                     <div className="space-y-6">
                       <div className="flex items-start justify-between">
@@ -119,34 +115,19 @@ export default function Hero() {
                         </Badge>
                       </div>
 
-                      {/* MODIFICATION START */}
                       <div>
-                        {/* Make sure the src path is correct for your project */}
-                        <img
-                          src="/VERTICALPAY-LOGO-4.png"
-                          alt="VerticalPay Logo"
-                          className="h-9 w-auto mb-2"
-                        />
-                        <p className="text-blue-100 font-medium">
-                          Serviço de Pagamentos
-                        </p>
+                        <h3 className="text-3xl font-bold mb-2">VerticalPay</h3>
+                        <p className="text-blue-100 font-medium">Serviço de Pagamentos</p>
                       </div>
-                      {/* MODIFICATION END */}
 
                       <p className="text-sm text-blue-50 leading-relaxed">
-                        Potencialize suas vendas com as melhores taxas e
-                        tecnologia de ponta em maquininhas.
+                        Potencialize suas vendas com as melhores taxas e tecnologia de ponta em maquininhas.
                       </p>
 
                       <Button
                         variant="secondary"
-                        className="bg-white text-blue-600 hover:bg-blue-50 w-full font-semibold shadow-lg group"
-                        onClick={() =>
-                          window.open(
-                            "https://www.verticalpay.com.br",
-                            "_blank"
-                          )
-                        }
+                        className="bg-white text-[#2f80c3] hover:bg-gray-100 w-full font-semibold shadow-lg group"
+                        onClick={() => window.open("https://www.verticalpay.com.br", "_blank")}
                       >
                         Conhecer VerticalPay
                         <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -177,7 +158,7 @@ export default function Hero() {
 
               {/* Right Column - 3 Service Cards Stacked */}
               {serviceCards.slice(0, 3).map((service, index) => {
-                const Icon = service.icon;
+                const Icon = service.icon
                 return (
                   <div
                     key={service.title}
@@ -186,7 +167,7 @@ export default function Hero() {
                       animationDelay: `${0.2 + index * 0.1}s`,
                     }}
                   >
-                    <Card className="h-full bg-white/95 backdrop-blur-sm shadow-lg border border-slate-200 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:z-50 cursor-pointer">
+                    <Card className="h-full bg-slate-900/80 backdrop-blur-sm shadow-lg border border-slate-800 transition-all duration-300 hover:shadow-2xl hover:shadow-[#2f80c3]/20 hover:scale-105 hover:z-50 cursor-pointer hover:border-[#2f80c3]/50">
                       <CardContent className="p-4 h-full flex items-center">
                         <div className="flex items-center gap-3 w-full">
                           <div
@@ -195,18 +176,14 @@ export default function Hero() {
                             <Icon className="w-5 h-5 text-white" />
                           </div>
                           <div className="min-w-0">
-                            <h4 className="font-semibold text-slate-900 text-sm mb-0.5">
-                              {service.title}
-                            </h4>
-                            <p className="text-xs text-slate-600 leading-relaxed">
-                              {service.description}
-                            </p>
+                            <h4 className="font-semibold text-white text-sm mb-0.5">{service.title}</h4>
+                            <p className="text-xs text-gray-400 leading-relaxed">{service.description}</p>
                           </div>
                         </div>
                       </CardContent>
                     </Card>
                   </div>
-                );
+                )
               })}
 
               <div className="grid grid-cols-2 gap-4">
@@ -217,7 +194,7 @@ export default function Hero() {
                     animationDelay: "0.5s",
                   }}
                 >
-                  <Card className="h-full bg-white/95 backdrop-blur-sm shadow-lg border border-slate-200 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:z-50 cursor-pointer">
+                  <Card className="h-full bg-slate-900/80 backdrop-blur-sm shadow-lg border border-slate-800 transition-all duration-300 hover:shadow-2xl hover:shadow-[#2f80c3]/20 hover:scale-105 hover:z-50 cursor-pointer hover:border-[#2f80c3]/50">
                     <CardContent className="p-4 h-full flex items-center">
                       <div className="flex flex-col items-center gap-2 w-full text-center">
                         <div
@@ -226,12 +203,8 @@ export default function Hero() {
                           <Settings className="w-5 h-5 text-white" />
                         </div>
                         <div className="min-w-0">
-                          <h4 className="font-semibold text-slate-900 text-xs mb-0.5">
-                            {serviceCards[3].title}
-                          </h4>
-                          <p className="text-xs text-slate-600 leading-tight">
-                            {serviceCards[3].description}
-                          </p>
+                          <h4 className="font-semibold text-white text-xs mb-0.5">{serviceCards[3].title}</h4>
+                          <p className="text-xs text-gray-400 leading-tight">{serviceCards[3].description}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -245,7 +218,7 @@ export default function Hero() {
                     animationDelay: "0.6s",
                   }}
                 >
-                  <Card className="h-full bg-white/95 backdrop-blur-sm shadow-lg border border-slate-200 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:z-50 cursor-pointer">
+                  <Card className="h-full bg-slate-900/80 backdrop-blur-sm shadow-lg border border-slate-800 transition-all duration-300 hover:shadow-2xl hover:shadow-[#2f80c3]/20 hover:scale-105 hover:z-50 cursor-pointer hover:border-[#2f80c3]/50">
                     <CardContent className="p-4 h-full flex items-center">
                       <div className="flex flex-col items-center gap-2 w-full text-center">
                         <div
@@ -254,12 +227,8 @@ export default function Hero() {
                           <Wifi className="w-5 h-5 text-white" />
                         </div>
                         <div className="min-w-0">
-                          <h4 className="font-semibold text-slate-900 text-xs mb-0.5">
-                            {serviceCards[4].title}
-                          </h4>
-                          <p className="text-xs text-slate-600 leading-tight">
-                            {serviceCards[4].description}
-                          </p>
+                          <h4 className="font-semibold text-white text-xs mb-0.5">{serviceCards[4].title}</h4>
+                          <p className="text-xs text-gray-400 leading-tight">{serviceCards[4].description}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -274,7 +243,7 @@ export default function Hero() {
                   animationDelay: "0.7s",
                 }}
               >
-                <Card className="h-full bg-white/95 backdrop-blur-sm shadow-lg border border-slate-200 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:z-50 cursor-pointer">
+                <Card className="h-full bg-slate-900/80 backdrop-blur-sm shadow-lg border border-slate-800 transition-all duration-300 hover:shadow-2xl hover:shadow-[#2f80c3]/20 hover:scale-105 hover:z-50 cursor-pointer hover:border-[#2f80c3]/50">
                   <CardContent className="p-4 h-full flex items-center">
                     <div className="flex items-center gap-3 w-full">
                       <div
@@ -283,12 +252,8 @@ export default function Hero() {
                         <Server className="w-5 h-5 text-white" />
                       </div>
                       <div className="min-w-0">
-                        <h4 className="font-semibold text-slate-900 text-sm mb-0.5">
-                          {serviceCards[5].title}
-                        </h4>
-                        <p className="text-xs text-slate-600 leading-relaxed">
-                          {serviceCards[5].description}
-                        </p>
+                        <h4 className="font-semibold text-white text-sm mb-0.5">{serviceCards[5].title}</h4>
+                        <p className="text-xs text-gray-400 leading-relaxed">{serviceCards[5].description}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -299,7 +264,7 @@ export default function Hero() {
             {/* Mobile Layout */}
             <div className="lg:hidden space-y-6">
               <div className="w-full max-w-[380px] mx-auto animate-fade-in-up">
-                <Card className="bg-gradient-to-br from-blue-600 via-indigo-600 to-blue-700 text-white shadow-2xl border-0">
+                <Card className="bg-gradient-to-br from-[#2f80c3] via-[#3a8bc9] to-[#2570a8] text-white shadow-2xl border-0">
                   <CardContent className="p-8">
                     <div className="space-y-6">
                       <div className="flex items-start justify-between">
@@ -313,25 +278,17 @@ export default function Hero() {
 
                       <div>
                         <h3 className="text-3xl font-bold mb-2">VerticalPay</h3>
-                        <p className="text-blue-100 font-medium">
-                          Serviço de Pagamentos
-                        </p>
+                        <p className="text-blue-100 font-medium">Serviço de Pagamentos</p>
                       </div>
 
                       <p className="text-sm text-blue-50 leading-relaxed">
-                        Potencialize suas vendas com as melhores taxas e
-                        tecnologia de ponta em maquininhas.
+                        Potencialize suas vendas com as melhores taxas e tecnologia de ponta em maquininhas.
                       </p>
 
                       <Button
                         variant="secondary"
-                        className="bg-white text-blue-600 hover:bg-blue-50 w-full font-semibold shadow-lg group"
-                        onClick={() =>
-                          window.open(
-                            "https://www.verticalpay.com.br",
-                            "_blank"
-                          )
-                        }
+                        className="bg-white text-[#2f80c3] hover:bg-gray-100 w-full font-semibold shadow-lg group"
+                        onClick={() => window.open("https://www.verticalpay.com.br", "_blank")}
                       >
                         Conhecer VerticalPay
                         <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -385,5 +342,5 @@ export default function Hero() {
         }
       `}</style>
     </section>
-  );
+  )
 }
