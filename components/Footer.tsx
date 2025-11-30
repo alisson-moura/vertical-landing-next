@@ -43,7 +43,7 @@ export default function Footer() {
               Soluções completas de pagamento para seu negócio crescer.
             </p>
             <a
-              href="https://verticaltecpay.com.br/"
+              href="https://verticalpay.com.br/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all"
