@@ -167,21 +167,23 @@ export default function Hero() {
                       animationDelay: `${0.2 + index * 0.1}s`,
                     }}
                   >
-                    <Card className="h-full bg-slate-900/80 backdrop-blur-sm shadow-lg border border-slate-800 transition-all duration-300 hover:shadow-2xl hover:shadow-[#2f80c3]/20 hover:scale-105 hover:z-50 cursor-pointer hover:border-[#2f80c3]/50">
-                      <CardContent className="p-4 h-full flex items-center">
-                        <div className="flex items-center gap-3 w-full">
-                          <div
-                            className={`w-11 h-11 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300`}
-                          >
-                            <Icon className="w-5 h-5 text-white" />
+                    <a href="/em-breve" className="block h-full">
+                      <Card className="h-full bg-slate-900/80 backdrop-blur-sm shadow-lg border border-slate-800 transition-all duration-300 hover:shadow-2xl hover:shadow-[#2f80c3]/20 hover:scale-105 hover:z-50 cursor-pointer hover:border-[#2f80c3]/50">
+                        <CardContent className="p-4 h-full flex items-center">
+                          <div className="flex items-center gap-3 w-full">
+                            <div
+                              className={`w-11 h-11 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300`}
+                            >
+                              <Icon className="w-5 h-5 text-white" />
+                            </div>
+                            <div className="min-w-0">
+                              <h4 className="font-semibold text-white text-sm mb-0.5">{service.title}</h4>
+                              <p className="text-xs text-gray-400 leading-relaxed">{service.description}</p>
+                            </div>
                           </div>
-                          <div className="min-w-0">
-                            <h4 className="font-semibold text-white text-sm mb-0.5">{service.title}</h4>
-                            <p className="text-xs text-gray-400 leading-relaxed">{service.description}</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
+                        </CardContent>
+                      </Card>
+                    </a>
                   </div>
                 )
               })}
@@ -194,21 +196,23 @@ export default function Hero() {
                     animationDelay: "0.5s",
                   }}
                 >
-                  <Card className="h-full bg-slate-900/80 backdrop-blur-sm shadow-lg border border-slate-800 transition-all duration-300 hover:shadow-2xl hover:shadow-[#2f80c3]/20 hover:scale-105 hover:z-50 cursor-pointer hover:border-[#2f80c3]/50">
-                    <CardContent className="p-4 h-full flex items-center">
-                      <div className="flex flex-col items-center gap-2 w-full text-center">
-                        <div
-                          className={`w-11 h-11 bg-gradient-to-br ${serviceCards[3].gradient} rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300`}
-                        >
-                          <Settings className="w-5 h-5 text-white" />
+                  <a href="/em-breve" className="block h-full">
+                    <Card className="h-full bg-slate-900/80 backdrop-blur-sm shadow-lg border border-slate-800 transition-all duration-300 hover:shadow-2xl hover:shadow-[#2f80c3]/20 hover:scale-105 hover:z-50 cursor-pointer hover:border-[#2f80c3]/50">
+                      <CardContent className="p-4 h-full flex items-center">
+                        <div className="flex flex-col items-center gap-2 w-full text-center">
+                          <div
+                            className={`w-11 h-11 bg-gradient-to-br ${serviceCards[3].gradient} rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300`}
+                          >
+                            <Settings className="w-5 h-5 text-white" />
+                          </div>
+                          <div className="min-w-0">
+                            <h4 className="font-semibold text-white text-xs mb-0.5">{serviceCards[3].title}</h4>
+                            <p className="text-xs text-gray-400 leading-tight">{serviceCards[3].description}</p>
+                          </div>
                         </div>
-                        <div className="min-w-0">
-                          <h4 className="font-semibold text-white text-xs mb-0.5">{serviceCards[3].title}</h4>
-                          <p className="text-xs text-gray-400 leading-tight">{serviceCards[3].description}</p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                      </CardContent>
+                    </Card>
+                  </a>
                 </div>
 
                 {/* Internet Card */}
@@ -218,21 +222,23 @@ export default function Hero() {
                     animationDelay: "0.6s",
                   }}
                 >
-                  <Card className="h-full bg-slate-900/80 backdrop-blur-sm shadow-lg border border-slate-800 transition-all duration-300 hover:shadow-2xl hover:shadow-[#2f80c3]/20 hover:scale-105 hover:z-50 cursor-pointer hover:border-[#2f80c3]/50">
-                    <CardContent className="p-4 h-full flex items-center">
-                      <div className="flex flex-col items-center gap-2 w-full text-center">
-                        <div
-                          className={`w-11 h-11 bg-gradient-to-br ${serviceCards[4].gradient} rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300`}
-                        >
-                          <Wifi className="w-5 h-5 text-white" />
+                  <a href="/em-breve" className="block h-full">
+                    <Card className="h-full bg-slate-900/80 backdrop-blur-sm shadow-lg border border-slate-800 transition-all duration-300 hover:shadow-2xl hover:shadow-[#2f80c3]/20 hover:scale-105 hover:z-50 cursor-pointer hover:border-[#2f80c3]/50">
+                      <CardContent className="p-4 h-full flex items-center">
+                        <div className="flex flex-col items-center gap-2 w-full text-center">
+                          <div
+                            className={`w-11 h-11 bg-gradient-to-br ${serviceCards[4].gradient} rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300`}
+                          >
+                            <Wifi className="w-5 h-5 text-white" />
+                          </div>
+                          <div className="min-w-0">
+                            <h4 className="font-semibold text-white text-xs mb-0.5">{serviceCards[4].title}</h4>
+                            <p className="text-xs text-gray-400 leading-tight">{serviceCards[4].description}</p>
+                          </div>
                         </div>
-                        <div className="min-w-0">
-                          <h4 className="font-semibold text-white text-xs mb-0.5">{serviceCards[4].title}</h4>
-                          <p className="text-xs text-gray-400 leading-tight">{serviceCards[4].description}</p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                      </CardContent>
+                    </Card>
+                  </a>
                 </div>
               </div>
 
@@ -243,21 +249,23 @@ export default function Hero() {
                   animationDelay: "0.7s",
                 }}
               >
-                <Card className="h-full bg-slate-900/80 backdrop-blur-sm shadow-lg border border-slate-800 transition-all duration-300 hover:shadow-2xl hover:shadow-[#2f80c3]/20 hover:scale-105 hover:z-50 cursor-pointer hover:border-[#2f80c3]/50">
-                  <CardContent className="p-4 h-full flex items-center">
-                    <div className="flex items-center gap-3 w-full">
-                      <div
-                        className={`w-11 h-11 bg-gradient-to-br ${serviceCards[5].gradient} rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300`}
-                      >
-                        <Server className="w-5 h-5 text-white" />
+                <a href="/em-breve" className="block h-full">
+                  <Card className="h-full bg-slate-900/80 backdrop-blur-sm shadow-lg border border-slate-800 transition-all duration-300 hover:shadow-2xl hover:shadow-[#2f80c3]/20 hover:scale-105 hover:z-50 cursor-pointer hover:border-[#2f80c3]/50">
+                    <CardContent className="p-4 h-full flex items-center">
+                      <div className="flex items-center gap-3 w-full">
+                        <div
+                          className={`w-11 h-11 bg-gradient-to-br ${serviceCards[5].gradient} rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300`}
+                        >
+                          <Server className="w-5 h-5 text-white" />
+                        </div>
+                        <div className="min-w-0">
+                          <h4 className="font-semibold text-white text-sm mb-0.5">{serviceCards[5].title}</h4>
+                          <p className="text-xs text-gray-400 leading-relaxed">{serviceCards[5].description}</p>
+                        </div>
                       </div>
-                      <div className="min-w-0">
-                        <h4 className="font-semibold text-white text-sm mb-0.5">{serviceCards[5].title}</h4>
-                        <p className="text-xs text-gray-400 leading-relaxed">{serviceCards[5].description}</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </a>
               </div>
             </div>
 

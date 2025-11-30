@@ -12,13 +12,7 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-    setIsMenuOpen(false)
-  }
+
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm shadow-lg border-b border-slate-800/50">
@@ -26,31 +20,24 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Image src="/Logo_branco.png" alt="Vertical Tecnologia" width={120} height={40} className="h-8 w-auto" />
+            <a href="/">
+              <Image src="/Logo_branco.png" alt="Vertical Tecnologia" width={120} height={40} className="h-8 w-auto" />
+            </a>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection("sobre")}
-              className="text-gray-300 hover:text-[#2f80c3] font-medium transition-colors"
-            >
+            <a href="/#sobre" className="text-gray-300 hover:text-[#2f80c3] font-medium transition-colors">
               Sobre Nós
-            </button>
-            <button
-              onClick={() => scrollToSection("servicos")}
-              className="text-gray-300 hover:text-[#2f80c3] font-medium transition-colors"
-            >
+            </a>
+            <a href="/#servicos" className="text-gray-300 hover:text-[#2f80c3] font-medium transition-colors">
               Serviços
-            </button>
-            <button
-              onClick={() => scrollToSection("contato")}
-              className="text-gray-300 hover:text-[#2f80c3] font-medium transition-colors"
-            >
+            </a>
+            <a href="/#contato" className="text-gray-300 hover:text-[#2f80c3] font-medium transition-colors">
               Contato
-            </button>
+            </a>
             <Button
-              onClick={() => scrollToSection("contato")}
+              onClick={() => (window.location.href = "/#contato")}
               className="bg-gradient-to-r from-[#2f80c3] to-[#4a9ad6] hover:from-[#2570a8] hover:to-[#2f80c3] text-white shadow-lg hover:shadow-[#2f80c3]/50 transition-all"
             >
               Fale Conosco
@@ -74,27 +61,33 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden bg-slate-900/95 backdrop-blur-sm border-t border-slate-800">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <button
-                onClick={() => scrollToSection("sobre")}
+              <a
+                href="/#sobre"
+                onClick={() => setIsMenuOpen(false)}
                 className="block w-full text-left px-3 py-2 text-gray-300 hover:text-[#2f80c3] hover:bg-slate-800 rounded-md font-medium transition-colors"
               >
                 Sobre Nós
-              </button>
-              <button
-                onClick={() => scrollToSection("servicos")}
+              </a>
+              <a
+                href="/#servicos"
+                onClick={() => setIsMenuOpen(false)}
                 className="block w-full text-left px-3 py-2 text-gray-300 hover:text-[#2f80c3] hover:bg-slate-800 rounded-md font-medium transition-colors"
               >
                 Serviços
-              </button>
-              <button
-                onClick={() => scrollToSection("contato")}
+              </a>
+              <a
+                href="/#contato"
+                onClick={() => setIsMenuOpen(false)}
                 className="block w-full text-left px-3 py-2 text-gray-300 hover:text-[#2f80c3] hover:bg-slate-800 rounded-md font-medium transition-colors"
               >
                 Contato
-              </button>
+              </a>
               <div className="px-3 py-2">
                 <Button
-                  onClick={() => scrollToSection("contato")}
+                  onClick={() => {
+                    window.location.href = "/#contato"
+                    setIsMenuOpen(false)
+                  }}
                   className="w-full bg-gradient-to-r from-[#2f80c3] to-[#4a9ad6] hover:from-[#2570a8] hover:to-[#2f80c3] text-white shadow-lg"
                 >
                   Fale Conosco

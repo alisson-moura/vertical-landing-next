@@ -64,24 +64,25 @@ export default function Services() {
           {services.map((service, index) => {
             const IconComponent = service.icon
             return (
-              <Card
-                key={index}
-                className="group hover:shadow-2xl hover:shadow-[#2f80c3]/20 transition-all duration-300 hover:-translate-y-2 border border-zinc-800 shadow-lg bg-gradient-to-br from-zinc-900 to-zinc-950"
-              >
-                <CardHeader className="space-y-4">
-                  <div
-                    className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
-                  >
-                    <IconComponent className="w-8 h-8 text-white" />
-                  </div>
-                  <CardTitle className="text-xl font-bold text-white group-hover:text-[#2f80c3] transition-colors">
-                    {service.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-300 leading-relaxed">{service.description}</p>
-                </CardContent>
-              </Card>
+              <a href="/em-breve" key={index} className="block h-full">
+                <Card
+                  className="group hover:shadow-2xl hover:shadow-[#2f80c3]/20 transition-all duration-300 hover:-translate-y-2 border border-zinc-800 shadow-lg bg-gradient-to-br from-zinc-900 to-zinc-950 h-full"
+                >
+                  <CardHeader className="space-y-4">
+                    <div
+                      className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
+                    >
+                      <IconComponent className="w-8 h-8 text-white" />
+                    </div>
+                    <CardTitle className="text-xl font-bold text-white group-hover:text-[#2f80c3] transition-colors">
+                      {service.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-300 leading-relaxed">{service.description}</p>
+                  </CardContent>
+                </Card>
+              </a>
             )
           })}
         </div>
