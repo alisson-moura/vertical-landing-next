@@ -18,7 +18,7 @@ export default function Footer() {
               className="h-10 w-auto brightness-0 invert"
             />
             <p className="text-slate-400 text-sm leading-relaxed">
-              Transformando negócios através da tecnologia, com soluções personalizadas 
+              Transformando negócios através da tecnologia, com soluções personalizadas
               e atendimento de excelência.
             </p>
           </div>
@@ -43,7 +43,7 @@ export default function Footer() {
               Soluções completas de pagamento para seu negócio crescer.
             </p>
             <a
-              href="https://www.verticalpay.com.br"
+              href="https://verticaltecpay.com.br/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all"

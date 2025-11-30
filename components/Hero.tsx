@@ -127,7 +127,7 @@ export default function Hero() {
                       <Button
                         variant="secondary"
                         className="bg-white text-[#2f80c3] hover:bg-gray-100 w-full font-semibold shadow-lg group"
-                        onClick={() => window.open("https://www.verticalpay.com.br", "_blank")}
+                        onClick={() => window.open("https://verticaltecpay.com.br/", "_blank")}
                       >
                         Conhecer VerticalPay
                         <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
